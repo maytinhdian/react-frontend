@@ -1,14 +1,21 @@
 
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import { Button } from '@material-tailwind/react'
+import Home from './pages/home'
+import Login from './pages/login'
 
 function App() {
   
 
   return (
     <>
-      <Button>Button</Button>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' exact element={<Home/>}/>
+          <Route path='/login' exact element={<Login/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
