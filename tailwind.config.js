@@ -6,7 +6,11 @@ export default {
   ],
   important: "#root", //Cau hinh thay doi style cua MUI 
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
+    },
   },
   plugins: [],
 }
